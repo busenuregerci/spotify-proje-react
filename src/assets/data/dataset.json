@@ -1,0 +1,163 @@
+{
+  "musics": [
+    {
+      "id": "1",
+      "musicSinger": "Sezen Aksu",
+      "musicName": "Unut",
+      "musicUrl": "https://youtu.be/LvNz1IIzPpI?si=aR-yXJyGoT9oIuDp",
+      "musicPhoto": "https://i1.sndcdn.com/artworks-r3uneNwFFvcG-0-t500x500.jpg",
+      "musicType": "Other",
+      "musicLyrics": "Kolay olmayacak elbet üzüleceğim\nMutlaka bir iz bırakacak\nBelki de çocuk gibi, sana küseceğim\nSeneler sonra utanarak\nDokunup birer birer sevdiğin eşyalara\nHatta belki ağlayacağım\nAcı çektiğim doğru, ama sen bana bakma\nNe olursa olsun seni unutacağım\nSeni sevdiğimi unut, sevişmelerimiz yalan\nUnut beni de her yalan gibi unut\nO sevgiler ki yoktular, onlar ümitlerimizdi\nNe ümitler yaşlandı gel zaman git zaman\nAyrıldığımızı unut, yalnızlıklar zaten yalan\nUnut beni de her yalan gibi unut\nKolay olmayacak elbet üzüleceğim\nMutlaka bir iz bırakacak\nBelki de çocuk gibi, sana küseceğim\nSeneler sonra utanarak\nDokunup birer birer, sevdiğin eşyalara\nHatta belki ağlayacağım\nAcı çektiğim doğru, ama sen bana bakma\nNe olursa olsun seni unutacağım\nSeni sevdiğimi unut, sevişmelerimiz yalan\nUnut beni de her yalan gibi unut\nO sevgiler ki yoktular, onlar ümitlerimizdi\nNe ümitler yaşlandı gel zaman git zaman\nAyrıldığımızı unut, yalnızlıklar zaten yalan\nUnut beni de her yalan gibi unut\nSeni sevdiğimi unut, sevişmelerimiz yalan\nUnut beni de her yalan gibi unut\nO sevgiler ki yoktular, onlar ümitlerimizdi\nNe ümitler yaşlandı gel zaman git zaman\nAyrıldığımızı unut, yalnızlıklar zaten yalan\nUnut beni de her yalan gibi unut\nKolay olmayacak elbet üzüleceğim"
+    },
+    {
+      "id": "2",
+      "musicSinger": "Nilüfer",
+      "musicName": "İnkar Etme",
+      "musicUrl": "https://www.youtube.com/watch?v=WgndvlS-MWA",
+      "musicPhoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-rjvyNXdULD_EXouJUMlouiSeoUxeRuie4Q&s",
+      "musicType": "Other",
+      "musicLyrics": "Aklım hiç almıyor nedense\nHer şeyi bir anda silmeni\nYaşanan onca şeyden sonra\nÖfkeli, insafsız sözleri\nDiyorsun ki gözyaşların faydasız\nSeni zaten hiç sevmedim ki\nDiyorsun ki gözyaşların faydasız\nSeni zaten hiç sevmedim ki\nİnkâr etme yalvarırım\nSen de sevdin beni bir zamanlar\nİnkâr etme yalvarırım\nSen de sevdin beni bir zamanlar\nGit diyorsun\nNasıl giderim!\nUmutlarım ne olacak?\nAcılarım, gözyaşlarım\nHesabını kim soracak?\nArdıma bakmadan gitmek zor\nAlışmak zor şeydir nedense\nYaşamak ya da ölmek aynı\nYalnızlık, o ayrı işkence\nDiyorsun ki gözyaşların faydasız\nSeni zaten hiç sevmedim ki\nDiyorsun ki gözyaşların faydasız\nSeni zaten hiç sevmedim ki\nİnkâr etme yalvarırım\nSen de sevdin beni bir zamanlar\nİnkâr etme yalvarırım\nSen de sevdin beni bir zamanlar\nGit diyorsun\nNasıl giderim!\nUmutlarım ne olacak?\nAcılarım, gözyaşlarım\nHesabını kim soracak?\nAcılarım, gözyaşlarım\nHesabını kim soracak?"
+    },
+    {
+      "id": "3",
+      "musicSinger": "Simge",
+      "musicName": "Önümüz Yaz",
+      "musicUrl": "https://youtu.be/GILi_0RamtY?si=g6iCwQ3NSKyzmZg4",
+      "musicPhoto": "https://kultur.istanbul/gorsel/2022/10/simge-roportaj.jpg",
+      "musicType": "Pop",
+      "musicLyrics": "Dökülür bedenim önüne bir köle diye\nDeğişir içimin sıcağı süreriz güneye\nYanacak yansın yüreğim döneriz deliye\nNe zaman o zaman yavrum şimdi değilse\nÇekemeseler de sevemeseler de\nBenim içim temiz kalbim haylaz\nÇekemeseler de sevmeseler de\nBenim içim temiz benim kalbim saf\nDüşür beni önüne ben olmuşum sarhoş\nGüz çiçeği dövmemi de soldurur güneş\nÇek beni de yatağına senciyim çoktan\nZamanımız az bak önümüz yaz",
+      "isDeleted": true
+    },
+    {
+      "id": "4",
+      "musicSinger": "Yalın",
+      "musicName": "Halbuki",
+      "musicPhoto": "https://i.ytimg.com/vi/6HrMkgbE4lo/maxresdefault.jpg",
+      "musicType": "Pop",
+      "musicUrl": "https://youtu.be/6HrMkgbE4lo?si=v4QC_faFjPk8o6in",
+      "musicLyrics": "Gördün mü aşkım?\nBiz o güvercin kadar bile\nCesur olamadık\nGördün mü aşkım?\nO gurur dağının eteğinden\nBi' türlü dolanamadık\nHalbuki iste ömrümü\nİste gönlümü\nİste, yoluna sereyim\nİçkiyi unuttum\nSigarayı bıraktım\nBi' seni unutamadım\nNeyleyim?\nA canına yandığım özlem\nA kıyıya vurduğum lodos\nDoğru günü beklermiş\nYakamoz\nGördün mü aşkım?\nBiz bir riyakâr kadar bile\nDüzgün duramadık\nGördün mü aşkım?\nBu masum rüyanın sonunda\nYine kavuşamadık\nHalbuki iste ömrümü\nİste gönlümü\nİste, yoluna sereyim\nİçkiyi unuttum\nSigarayı bıraktım\nBi' seni unutamadım\nNeyleyim?\nA canına yandığım özlem\nA kıyıya vurduğum lodos\nDoğru günü beklermiş\nYakamoz\nHalbuki iste ömrümü\nİste gönlümü\nİste, yoluna sereyim\nİçkiyi unuttum\nSigarayı bıraktım\nBi' seni unutamadım\nNeyleyim?\nA canına yandığım özlem\nA kıyıya vurduğum lodos\nDoğru günü beklermiş\nYakamoz\nGördün mü aşkım?"
+    },
+    {
+      "id": "6",
+      "musicName": "Oy Sevdam",
+      "musicSinger": "Davut Güloğlu",
+      "musicPhoto": "https://images.genius.com/06333d0fc46aaf554d18d87cf0d3966e.800x800x1.jpg",
+      "musicType": "Pop",
+      "musicUrl": "https://youtu.be/rPNsD6ihQ_0?si=wWmksswNDxTyB41b",
+      "musicLyrics": "Kız evunun önünde önünde\nKız evunun önünde önünde\nGül toplarum toplarum bi' tanem\nGül toplarum toplarum bi' tanem\nAşkundan ölsem bile sevduğum\nAşkundan ölsem bile sevduğum\nGururumdan saklarum saklarum\nGururumdan saklarum saklarum\nOy sevdam dağlara mi çıkayim?\nOy sevdam yollara mi vurayim?\nOy sevdam sensuz nasi' durayim?\nOy oy dağlara mi çıkayim?\nOy oy yollara mi vurayim?\nOy oy sensuz nasi' durayim?\nEvinun öni çimen yok biçen\nEvinun öni çimen yok biçen\nSevdum ben seni yarum kuçukken\nSevdum ben seni yarum kuçukken\nBırakup gider miyim sevduğum?\nBırakup gider miyim sevduğum?\nYar seni ben bu kadar severken\nYar seni ben bu kadar severken\nOy sevdam dağlara mi çıkayim?\nOy sevdam yollara mi vurayim?\nOy sevdam sensuz nasi' durayim?\nOy oy dağlara mi çıkayim?\nOy oy yollara mi vurayim?\nOy oy sensuz nasi' durayim?\nEvinun kapisinda çiçekler\nEvinun kapisinda çiçekler\nKalbumde uçuşur kelebekler\nKalbumde uçuşur kelebekler\nÇok nazli cilvelidu sevduğum\nÇok nazli cilvelidu sevduğum\nÖmrümi hayatumi verduğum\nÖmrümi hayatimi verduğum\nOy sevdam dağlara mi çıkayim?\nOy sevdam yollara mi vurayim?\nOy sevdam sensuz nasi' durayim?\nOy oy dağlara mi çıkayim?\nOy oy yollara mi vurayim?\nOy oy sensuz nasi' durayim?\nOy oy dağlara mi çıkayim?\nOy oy yollara mi vurayim?\nOy oy sensuz nasi' durayim?\nOy oy dağlara mi çıkayim?\nOy oy yollara mi vurayim?\nOy oy sensuz nasi' durayim?",
+      "isDeleted": true
+    },
+    {
+      "id": "7",
+      "musicName": "Ayrıldım Yüreğinden",
+      "musicSinger": "İmera",
+      "musicPhoto": "https://i.ytimg.com/vi/uhaPO3kbfls/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDooaLDJOs66KqgX7CvGZbabPoE4g",
+      "musicType": "Other",
+      "musicUrl": "https://youtu.be/uhaPO3kbfls?si=Bm90ynOUqwfm3P-D",
+      "musicLyrics": "Böyle deli rüyaya nasil dalmişum\nSen hiç benum olmadun öyle sanmişum\nSen hiç benum olmadun öyle sanmişum\nGözlerune, sözlerune bakup kanmişum\nHâlum budur dostlarum böyle yanmişum\nHâlum budur dostlarum böyle yanmişum\nDinlemem daha seni\nGörmedun niye beni\nKimse sevmez seveni yâr\nYer yıkılsun yerinden\nYaram vardur derinden\nAyrıldum yüreğunden yâr\nDinlemem daha seni\nGörmedun niye beni\nKimse sevmez seveni yâr\nYer yıkılsun yerinden\nYaram vardur derinden\nAyrıldum yüreğunden yâr\nÖyle geçti ki zaman tükendum bittum\nDertlerumlan beraber kendume yettum\nDertlerumlan beraber kendume yettum\nBu kara yazılari ben kendum seçtim\nDikenliydi yollarun görmedum geçtum\nDikenliydi yollarun görmedum geçtum\nDinlemem daha seni\nGörmedun niye beni\nKimse sevmez seveni yâr\nYer yıkılsun yerinden\nYaram vardur derinden\nAyrıldum yüreğunden yâr\nDinlemem daha seni\nGörmedun niye beni\nKimse sevmez seveni yâr\nYer yıkılsun yerinden\nYaram vardur derinden\nAyrıldum yüreğunden yâr"
+    },
+    {
+      "id": "8",
+      "musicName": "Bir Derdim Var",
+      "musicSinger": "Mor ve Ötesi",
+      "musicPhoto": "https://i.scdn.co/image/ab67616d0000b27361cd6f5ad7c69b76adbc5419",
+      "musicType": "Rock",
+      "musicUrl": "https://youtu.be/7RW8n4iXZbA?si=zXiFNiqcR3Scys8G",
+      "musicLyrics": "Bir derdim var, artık tutamam içimde\nGitsem nereye kadar?\nKalsam neye yarar?\nHiç anlatamadım, hiç anlamadılar\nHerkes neden düşman?\nHerkes neden düşman?\nUnuttuk hepsini, Nuh'un nefesini\nGelme yanıma, sen başkasın, ben başka\nBir derdim var, artık tutamam içimde\nGitsem nereye kadar?\nKalsam neye yarar?\nHiç anlatamadım, hiç anlamadılar\nBak, bu son perde\nOyun yok bundan sonra\nIşık yok, hiçbir şey yok\nYok, yok, yok\nBir derdim var\n(Bir derdim var)\nBir derdim var\n(Bir derdim var)\nBir derdim var, (tutamam) içimde\nBir derdim var, artık tutamam içimde"
+    },
+    {
+      "id": "9",
+      "musicName": "Cambaz",
+      "musicSinger": "Mor ve Ötesiıı",
+      "musicPhoto": "https://i.scdn.co/image/ab67616d0000b27361cd6f5ad7c69b76adbc5419",
+      "musicType": "Rock",
+      "musicUrl": "https://youtu.be/Lw4unI3tVNQ?si=C7tkFuGa5f2DfJ7V",
+      "musicLyrics": "Ne habersin ne Türk'sün\nSeni gören yollara dökülsün\nKul oldun, köle oldun\nKurşun geçirmez cam oldun\nBütün dünya izler durur\nAfetiazam bekler durur\nHedefini al, piyasanı al, her şeyi al\nYandı dertler, bitti tasa\nBen kurbanım bu cambaza\nİki gözüm kadar eminim, sen yoksun\nKul oldun, köle oldun\nKurşun geçirmez cam oldun\nCin oldun, adam çarptın\nCellat oldun, kelle uçurdun\nBütün dünya izler durur\nAfetiazam bekler durur\nHedefini al, piyasanı al, her şeyi al\nYandı dertler, bitti tasa\nBen kurbanım bu cambaza\nİki gözüm kadar eminim, sen yoksun\nVar mısın? Yoksun\nVar mısın? Yoksun\nİki gözüm, eminim, sen yoksun\nVar mısın? Yoksun\nVar mısın? Yoksun\nBütün dünya izler durur\nAfetiazam bekler durur\nHedefini al, piyasanı al, her şeyi al\nYandı dertler, bitti tasa\nBen kurbanım bu cambaza\nİki gözüm kadar eminim, sen yoksun\nSen yoksun\nSen yoksun"
+    },
+    {
+      "id": "10",
+      "musicName": "Sultan-ı Yegah",
+      "musicSinger": "Nur Yoldaş",
+      "musicPhoto": "https://i.scdn.co/image/ab67616d0000b273da792ff5c8ab1f321e7c4863",
+      "musicType": "Other",
+      "musicUrl": "https://youtu.be/fPWYoOwzo1o?si=34P3QUBXppTrqAPq",
+      "musicLyrics": "Şamdanları donanınca\nEski zaman sevdalarının\nBaşlar ay doğarken saltanatı\nSultanıyegâhın\nSultanıyegâhın\nTende nemli yumuşaklığı\nDenizden gelen ahın\nGizemli kanatları\nRuhta ölüm karanlığının\nBaşlar ay doğarken saltanatı\nSultanıyegâhın\nSultanıyegâhın\nŞamdanları donanınca\nEski zaman sevdalarının\nBaşlar ay doğarken saltanatı\nSultanıyegâhın\nSultanıyegâhın\nTende nemli yumuşaklığı\nDenizden gelen ahın\nGizemli kanatları\nRuhta ölüm karanlığının\nBaşlar ay doğarken saltanatı\nSultanıyegâhın\nSultanıyegâhın"
+    },
+    {
+      "id": "11",
+      "musicName": "wefew",
+      "musicSinger": "sdfsd",
+      "musicPhoto": "",
+      "musicType": "Jazz",
+      "musicUrl": "",
+      "musicLyrics": "wefwe",
+      "isDeleted": true
+    },
+    {
+      "id": "12",
+      "musicName": "dfbdf",
+      "musicSinger": "dfdfb",
+      "musicPhoto": "",
+      "musicType": "HipHop",
+      "musicUrl": "",
+      "musicLyrics": "adfebed",
+      "isDeleted": true
+    },
+    {
+      "id": "13",
+      "musicName": "sdvdevrf",
+      "musicSinger": "dsfvdf",
+      "musicPhoto": "",
+      "musicType": "Jazz",
+      "musicUrl": "",
+      "musicLyrics": "edsrvervgre",
+      "isDeleted": true
+    },
+    {
+      "id": "14",
+      "musicName": "dwefer",
+      "musicSinger": "sdvfsder",
+      "musicPhoto": "",
+      "musicType": "Jazz",
+      "musicUrl": "",
+      "musicLyrics": "sdgrrerg",
+      "isDeleted": true
+    },
+    {
+      "id": "15",
+      "musicName": "sdvsfd",
+      "musicSinger": "sdvdsf",
+      "musicPhoto": "",
+      "musicType": "Jazz",
+      "musicUrl": "",
+      "musicLyrics": "fsdvdsf",
+      "isDeleted": true
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "categoryName": "Pop"
+    },
+    {
+      "id": "2",
+      "categoryName": "Rock"
+    },
+    {
+      "id": "3",
+      "categoryName": "Jazz"
+    },
+    {
+      "id": "4",
+      "categoryName": "HipHop"
+    },
+    {
+      "id": "5",
+      "categoryName": "Classic"
+    },
+    {
+      "id": "6",
+      "categoryName": "Other"
+    }
+  ]
+}

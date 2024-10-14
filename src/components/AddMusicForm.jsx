@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import '../assets/style/addMusicForm.scss';
 import DataContext from '../context/DataContext';
-
+import { useNavigate } from 'react-router-dom';
 const AddMusicForm = () => {
   const {
     handleSubmit,
@@ -11,7 +11,7 @@ const AddMusicForm = () => {
     musicSinger,
     musicPhoto,
     musicUrl,
-    musicLyrics,
+    lyrics,
     setMusicName,
     setMusicType,
     setMusicSinger,
@@ -20,10 +20,14 @@ const AddMusicForm = () => {
     setLyrics,
     categories
   } = useContext(DataContext);
+  const navigate = useNavigate(); 
   
-
+  const handleFormSubmit = (e) => {
+    handleSubmit(e);
+    navigate("/home");
+    }
   return (
-    <form onSubmit={handleSubmit} className="addMusic">
+    <form onSubmit={handleFormSubmit} className="addMusic">
       <h2>{selectedMusic ? "Edit Music" : "Add Music"}</h2>
       <input
         value={musicSinger}
@@ -61,10 +65,10 @@ const AddMusicForm = () => {
         ))}
       </select>
       <textarea
-        value={musicLyrics}
+        value={lyrics}  
         onChange={(e) => setLyrics(e.target.value)}
         placeholder="Enter Lyrics"
-        rows="5"
+        rows="10" cols="50"
       />
       <input
         type="submit"

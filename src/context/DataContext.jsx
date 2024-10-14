@@ -60,17 +60,6 @@ export const DataProvider = ({children}) =>{
             showConfirmButton: true,
             confirmButtonText: "Okay"
           });
-          // toast.info('❤️ Music added successfully!', {
-          //   position: "top-center",
-          //   autoClose: 5000,
-          //   hideProgressBar: false,
-          //   closeOnClick: true,
-          //   pauseOnHover: true,
-          //   draggable: true,
-          //   progress: undefined,
-          //   theme: "dark",
-          //   transition: Zoom,
-          //   });
         } 
         // Eğer müzik güncelleniyorsa
         else {
@@ -100,14 +89,15 @@ export const DataProvider = ({children}) =>{
             });
         }
       };
-      const deleteMusic = async (id) =>{
+
+    const deleteMusic = async (id) =>{
         setMusicList(prev => prev.filter(statedenGelen => statedenGelen.id !== id))
         const url = `http://localhost:3000/musics/${id}`  
         const response = await axios.patch(url,{isDeleted:true})
         console.log(response)
       };
 
-      const swallDelete = async (id) => { 
+    const swallDelete = async (id) => { 
         const musicToDelete = musicList.find(music => music.id === id); 
     
         if (!musicToDelete) {
@@ -170,17 +160,17 @@ export const DataProvider = ({children}) =>{
     }
     
 
-    useEffect(() =>{
-        if(selectedMusic){
-          setMusicName(selectedMusic.musicName);
-          setMusicSinger(selectedMusic.musicSinger);
-          setMusicPhoto(selectedMusic.musicPhoto);
-          setMusicType(selectedMusic.musicType);
-          setMusicUrl(selectedMusic.musicUrl);
-          setLyrics(selectedMusic.musicLyrics);
-        }
-         
-      },[selectedMusic])
+    useEffect(() => {
+      if (selectedMusic) {
+        setMusicName(selectedMusic.musicName);
+        setMusicSinger(selectedMusic.musicSinger);
+        setMusicPhoto(selectedMusic.musicPhoto);
+        setMusicType(selectedMusic.musicType);
+        setMusicUrl(selectedMusic.musicUrl);
+        setLyrics(selectedMusic.musicLyrics); 
+        console.log('Selected Music Lyrics:', selectedMusic.musicLyrics);
+      }
+    }, [selectedMusic]);
 
       useEffect(() =>{
         getMusics();

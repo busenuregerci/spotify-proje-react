@@ -17,9 +17,15 @@ const MusicCard = ({ music }) => {
         <button className='delete' onClick={() => swallDelete(music.id)}>
           <VscTrash size={30} />
         </button>
-        <button className='edit' onClick={() => setSelectedMusic(music)}>
+        <Link to="/add-music">
+        <button className='edit' onClick={() => {
+  console.log(music);
+  setSelectedMusic(music);
+}}>
           <VscEdit size={30} />
         </button>
+        </Link>
+        
         <img src={music.musicPhoto ? music.musicPhoto : DefaultPhoto} alt="music" />
         <div className="text">
           <Link className='music-title' to={music.id}>{music.musicSinger} - {music.musicName}</Link>

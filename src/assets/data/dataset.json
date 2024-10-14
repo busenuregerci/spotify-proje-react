@@ -2,11 +2,11 @@
   "musics": [
     {
       "id": "1",
-      "musicSinger": "Sezen Aksu",
       "musicName": "Unut",
-      "musicUrl": "https://youtu.be/LvNz1IIzPpI?si=aR-yXJyGoT9oIuDp",
+      "musicSinger": "Sezen Aksu",
       "musicPhoto": "https://i1.sndcdn.com/artworks-r3uneNwFFvcG-0-t500x500.jpg",
       "musicType": "Other",
+      "musicUrl": "https://youtu.be/LvNz1IIzPpI?si=aR-yXJyGoT9oIuDp",
       "musicLyrics": "Kolay olmayacak elbet üzüleceğim\nMutlaka bir iz bırakacak\nBelki de çocuk gibi, sana küseceğim\nSeneler sonra utanarak\nDokunup birer birer sevdiğin eşyalara\nHatta belki ağlayacağım\nAcı çektiğim doğru, ama sen bana bakma\nNe olursa olsun seni unutacağım\nSeni sevdiğimi unut, sevişmelerimiz yalan\nUnut beni de her yalan gibi unut\nO sevgiler ki yoktular, onlar ümitlerimizdi\nNe ümitler yaşlandı gel zaman git zaman\nAyrıldığımızı unut, yalnızlıklar zaten yalan\nUnut beni de her yalan gibi unut\nKolay olmayacak elbet üzüleceğim\nMutlaka bir iz bırakacak\nBelki de çocuk gibi, sana küseceğim\nSeneler sonra utanarak\nDokunup birer birer, sevdiğin eşyalara\nHatta belki ağlayacağım\nAcı çektiğim doğru, ama sen bana bakma\nNe olursa olsun seni unutacağım\nSeni sevdiğimi unut, sevişmelerimiz yalan\nUnut beni de her yalan gibi unut\nO sevgiler ki yoktular, onlar ümitlerimizdi\nNe ümitler yaşlandı gel zaman git zaman\nAyrıldığımızı unut, yalnızlıklar zaten yalan\nUnut beni de her yalan gibi unut\nSeni sevdiğimi unut, sevişmelerimiz yalan\nUnut beni de her yalan gibi unut\nO sevgiler ki yoktular, onlar ümitlerimizdi\nNe ümitler yaşlandı gel zaman git zaman\nAyrıldığımızı unut, yalnızlıklar zaten yalan\nUnut beni de her yalan gibi unut\nKolay olmayacak elbet üzüleceğim"
     },
     {
@@ -20,13 +20,12 @@
     },
     {
       "id": "3",
-      "musicSinger": "Simge",
       "musicName": "Önümüz Yaz",
-      "musicUrl": "https://youtu.be/GILi_0RamtY?si=g6iCwQ3NSKyzmZg4",
+      "musicSinger": "Simge",
       "musicPhoto": "https://kultur.istanbul/gorsel/2022/10/simge-roportaj.jpg",
       "musicType": "Pop",
-      "musicLyrics": "Dökülür bedenim önüne bir köle diye\nDeğişir içimin sıcağı süreriz güneye\nYanacak yansın yüreğim döneriz deliye\nNe zaman o zaman yavrum şimdi değilse\nÇekemeseler de sevemeseler de\nBenim içim temiz kalbim haylaz\nÇekemeseler de sevmeseler de\nBenim içim temiz benim kalbim saf\nDüşür beni önüne ben olmuşum sarhoş\nGüz çiçeği dövmemi de soldurur güneş\nÇek beni de yatağına senciyim çoktan\nZamanımız az bak önümüz yaz",
-      "isDeleted": true
+      "musicUrl": "https://youtu.be/GILi_0RamtY?si=g6iCwQ3NSKyzmZg4",
+      "musicLyrics": "Dökülür bedenim önüne bir köle diye\nDeğişir içimin sıcağı süreriz güneye\nYanacak yansın yüreğim döneriz deliye\nNe zaman o zaman yavrum şimdi değilse\nÇekemeseler de sevemeseler de\nBenim içim temiz kalbim haylaz\nÇekemeseler de sevmeseler de\nBenim içim temiz benim kalbim saf\nDüşür beni önüne ben olmuşum sarhoş\nGüz çiçeği dövmemi de soldurur güneş\nÇek beni de yatağına senciyim çoktan\nZamanımız az bak önümüz yaz"
     },
     {
       "id": "4",

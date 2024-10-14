@@ -24,7 +24,6 @@ function App() {
           <Route path="register" element={<RegisterPage/>} />
           <Route path="login" element={<LoginPage/>}/>
           <Route path="add-music" element={<AddMusicForm/>}/>
-          <Route path="edit-music/:musicId" element={<AddMusicForm/>}/>
           <Route path="home/:musicId" element={<DetailMusic/>}/>
         </Route>
     </Routes>

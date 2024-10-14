@@ -3,10 +3,10 @@ import '../assets/style/musicCard.scss';
 import { VscEdit, VscTrash } from 'react-icons/vsc';
 import DefaultPhoto from '../assets/img/TUNE IN.png';
 import DataContext from '../context/DataContext';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const MusicCard = ({ music }) => {
-  const { swallDelete, search, setSelectedMusic } = useContext(DataContext);
+  const { swallDelete, search, dispatch } = useContext(DataContext);
 
   const musicNameMatches = music.musicName?.toLowerCase().includes(search.toLowerCase());
   const musicSingerMatches = music.musicSinger?.toLowerCase().includes(search.toLowerCase());
@@ -18,12 +18,11 @@ const MusicCard = ({ music }) => {
           <VscTrash size={30} />
         </button>
         <Link to="/add-music">
-        <button className='edit' onClick={() => {
-  console.log(music);
-  setSelectedMusic(music);
-}}>
+        <button className='edit' 
+          onClick={() => dispatch({ type: "selectMusic", payload: music })}>
           <VscEdit size={30} />
         </button>
+
         </Link>
         
         <img src={music.musicPhoto ? music.musicPhoto : DefaultPhoto} alt="music" />

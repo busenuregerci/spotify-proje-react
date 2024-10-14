@@ -18,15 +18,15 @@ function App() {
     <>
     <BrowserRouter>
     <Routes>
-        <Route path="/" element={<LoadingPage/>}/>
-        <Route path="/" element={<Navi/>}>
-          <Route path="home" element={<MainPage/>}/>
-          <Route path="register" element={<RegisterPage/>} />
-          <Route path="login" element={<LoginPage/>}/>
-          <Route path="add-music" element={<AddMusicForm/>}/>
-          <Route path="home/:musicId" element={<DetailMusic/>}/>
-        </Route>
-    </Routes>
+      <Route path="/" element={<LoadingPage />} />
+      <Route path="/" element={<Navi />}>
+      <Route path="home" element={<MainPage />} />
+      <Route path="register" element={<RegisterPage />} />
+      <Route path="login" element={<LoginPage />} />
+      <Route path="add-music" element={<AddMusicForm />} />
+      <Route path="home/:musicId" element={<DetailMusic />} />
+  </Route>
+</Routes>
     </BrowserRouter>
       <ToastContainer/>
     </>

@@ -12,12 +12,6 @@ const AddMusicForm = () => {
     musicPhoto,
     musicUrl,
     lyrics,
-    setMusicName,
-    setMusicType,
-    setMusicSinger,
-    setMusicPhoto, 
-    setMusicUrl,
-    setLyrics,
     categories
   } = useContext(DataContext);
   const navigate = useNavigate(); 
@@ -31,31 +25,36 @@ const AddMusicForm = () => {
       <h2>{selectedMusic ? "Edit Music" : "Add Music"}</h2>
       <input
         value={musicSinger}
-        onChange={(e) => setMusicSinger(e.target.value)}
+        // case-7
+        onChange={(e) => dispatch({type:"musicSinger", payload:e.target.value})}
         type="text"
         placeholder="Enter Singer/s"
       />
       <input
         value={musicName}
-        onChange={(e) => setMusicName(e.target.value)}
+        // case-8
+        onChange={(e) => dispatch({type:"musicName", payload: e.target.value})}
         type="text"
         placeholder="Enter Music Name"
       />
       <input
         value={musicUrl}
-        onChange={(e) => setMusicUrl(e.target.value)}
+        // case-9
+        onChange={(e) => dispatch({type:"musicUrl", payload: e.target.value})}
         type="url"
         placeholder="Enter Music Link"
       />
       <input
         value={musicPhoto}
-        onChange={(e) => setMusicPhoto(e.target.value)}
+        // case 10
+        onChange={(e) => dispatch({type: "musicPhoto", payload: e.target.value})}
         type="url"
         placeholder="Enter Music Photo"
       />
       <select
         value={musicType}
-        onChange={(e) => setMusicType(e.target.value)}
+        // case-11
+        onChange={(e) => dispatch({type: "musicType", payload: e.target.value})}
       >
         <option>Select Music Type</option>
         {categories.map((category) => (
@@ -66,7 +65,8 @@ const AddMusicForm = () => {
       </select>
       <textarea
         value={lyrics}  
-        onChange={(e) => setLyrics(e.target.value)}
+        // case-12
+        onChange={(e) =>dispatch({type:"lyrics", payload: e.target.value})}
         placeholder="Enter Lyrics"
         rows="10" cols="50"
       />

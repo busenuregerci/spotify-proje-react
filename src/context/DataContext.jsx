@@ -1,40 +1,34 @@
-import React, { createContext,useEffect, useState } from 'react'
+import React, { createContext,useEffect, useReducer } from 'react'
 import Swal from 'sweetalert2';
 import AddBack from '../assets/img/back.png'
 import AddGif from '../assets/img/music.gif'
 import axios from 'axios'
 import { Bounce, toast } from "react-toastify"
+import { initialState, reducer } from "../reducer/reducer";
 
 
 // Contex yaratılır
 const DataContext = createContext();
 
 export const DataProvider = ({children}) =>{
-    const[musicList,setMusicList] = useState([]);
-    const[categories, setCategories] = useState([]);
-    const[selectedCategory, setSelectedCategory] = useState("All Musics");
-    const[search, setSearch] = useState("");
-    const[selectedMusic, setSelectedMusic] = useState("")
-    const [musicName, setMusicName] = useState("");
-    const [musicSinger, setMusicSinger] = useState("");
-    const [musicUrl, setMusicUrl] = useState("");
-    const [musicPhoto, setMusicPhoto] = useState("");
-    const [musicType, setMusicType] = useState("Select Music Type");
-    const [lyrics, setLyrics] = useState("");
-    const[musicDetail, setMusicDetail] = useState(""); 
+    
+  const[state,dispatch] = useReducer(reducer,initialState)
+  const{musicList, selectedMusic} = state;
 
     const getMusics = async() => {
         const url = "http://localhost:3000/musics";
         const response = await fetch(url);
         const musics = await response.json();
-        setMusicList(musics)
+        // case-1
+        dispatch({type:"getMusics", payload:musics})
       
     }
     const getCategories = async ()=>{
       const url ="http://localhost:3000/categories"
       const response = await axios.get(url);
       const categories = await response.data;
-      setCategories(categories);
+      // case-2
+      dispatch({type:"getCategories",payload:categories})
     }
     const addMusic = async (newMusic) => {
         let url = "http://localhost:3000/musics";
@@ -42,7 +36,8 @@ export const DataProvider = ({children}) =>{
         // Eğer yeni müzik ekleniyorsa
         if (!selectedMusic) {
           newMusic.id =(Number(musicList[musicList.length-1].id)+1).toString();
-          setMusicList(prev => [...prev, newMusic]); // Yeni müziği ekle
+          // case-3
+          dispatch({type:"addMusic", newMusic})
           const response = await axios.post(url, newMusic);
           console.log(response.data);
           Swal.fire({
@@ -64,18 +59,14 @@ export const DataProvider = ({children}) =>{
         // Eğer müzik güncelleniyorsa
         else {
           url += `/${selectedMusic.id}`;
+          newMusic.id = selectedMusic.id;
           const response = await axios.put(url, newMusic);
           console.log(response.data);
       
           // Frontend'de müzik listesi güncellemesi
-          setMusicList(prev => prev.map(music => {
-            if (music.id === selectedMusic.id) {
-              return {...newMusic }; // Mevcut müziği güncelle
-            } else {
-              return music; // Değişmeyen müzikleri olduğu gibi bırak
-            }
-          }));
-          setSelectedMusic("")
+          // case-4
+          dispatch({type:"updateMusic", newMusic})
+
           toast.warn('👌 Music edited successfully!', {
             position: "top-center",
             autoClose: 5000,
@@ -84,14 +75,15 @@ export const DataProvider = ({children}) =>{
             pauseOnHover: true,
             draggable: true,
             progress: undefined,
-            theme: "dark",
+            theme: "light",
             transition: Bounce,
             });
         }
       };
 
     const deleteMusic = async (id) =>{
-        setMusicList(prev => prev.filter(statedenGelen => statedenGelen.id !== id))
+      // case-5
+        dispatch({type:"deleteMusic",id})
         const url = `http://localhost:3000/musics/${id}`  
         const response = await axios.patch(url,{isDeleted:true})
         console.log(response)
@@ -136,41 +128,23 @@ export const DataProvider = ({children}) =>{
       const handleSubmit = (e) => {
         e.preventDefault();
         addMusic({
-            id: (Number(musicList[musicList.length - 1].id) + 1).toString(), 
-            musicName: musicName,
-            musicSinger: musicSinger,
-            musicPhoto: musicPhoto,
-            musicType: musicType,
-            musicUrl: musicUrl,
-            musicLyrics: lyrics, 
+            // id: (Number(musicList[musicList.length - 1].id) + 1).toString(), 
+            musicName: state.musicName,
+            musicSinger: state.musicSinger,
+            musicPhoto: state.musicPhoto,
+            musicType: state.musicType,
+            musicUrl: state.musicUrl,
+            musicLyrics: state.lyrics, 
         });
-        setMusicName("");
-        setMusicSinger("");
-        setMusicPhoto("");
-        setMusicType("Select Music Type");
-        setMusicUrl("");
-        setLyrics(""); 
+        // case-6
+        dispatch({type:"resetForm"})
     };
     const getMusicDetail = async(id) =>{
-      
-      const url = `http://localhost:3000/musics/${id}`  
-      const response = await axios.get(url);
-      setMusicDetail(response.data); // find!!
-      console.log(response)
-    }
+      const musicDetail = musicList.find(music => music.id === id); 
     
-
-    useEffect(() => {
-      if (selectedMusic) {
-        setMusicName(selectedMusic.musicName);
-        setMusicSinger(selectedMusic.musicSinger);
-        setMusicPhoto(selectedMusic.musicPhoto);
-        setMusicType(selectedMusic.musicType);
-        setMusicUrl(selectedMusic.musicUrl);
-        setLyrics(selectedMusic.musicLyrics); 
-        console.log('Selected Music Lyrics:', selectedMusic.musicLyrics);
-      }
-    }, [selectedMusic]);
+      dispatch({ type: "musicDetail", payload: musicDetail }); 
+    }
+  
 
       useEffect(() =>{
         getMusics();
@@ -183,30 +157,12 @@ export const DataProvider = ({children}) =>{
       },[])
 
     return <DataContext.Provider value={{
-        setSelectedCategory, 
-            setSearch, 
-            categories, 
+       
+            
             handleSubmit,
-            selectedMusic,
-            musicName,
-            musicType,
-            musicSinger,
-            musicPhoto,
-            musicUrl,
-            lyrics, 
-            setMusicName,
-            setMusicType,
-            setMusicSinger,
-            setMusicPhoto,
-            setMusicUrl,
-            setLyrics, 
-            musicList,  
-            selectedCategory, 
             swallDelete, 
-            search, 
-            setSelectedMusic,
-            musicDetail,
-            setMusicDetail,
+            ...state,
+            dispatch,
             getMusicDetail
     }}>
         {children}

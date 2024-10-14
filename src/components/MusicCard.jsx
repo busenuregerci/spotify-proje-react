@@ -18,11 +18,9 @@ const MusicCard = ({ music }) => {
           <VscTrash size={30} />
         </button>
         <Link to="/add-music">
-        <button className='edit' 
-          onClick={() => dispatch({ type: "selectMusic", payload: music })}>
+        <button className='edit' onClick={() => dispatch({type:"selectMusic", music})}>
           <VscEdit size={30} />
         </button>
-
         </Link>
         
         <img src={music.musicPhoto ? music.musicPhoto : DefaultPhoto} alt="music" />

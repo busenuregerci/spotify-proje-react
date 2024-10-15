@@ -144,6 +144,8 @@ export const DataProvider = ({children}) =>{
     
       dispatch({ type: "musicDetail", payload: musicDetail }); 
     }
+
+   
   
 
       useEffect(() =>{
@@ -160,7 +162,7 @@ export const DataProvider = ({children}) =>{
        
             
             handleSubmit,
-            swallDelete, 
+            swallDelete,
             ...state,
             dispatch,
             getMusicDetail

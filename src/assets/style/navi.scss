@@ -53,6 +53,12 @@ nav a {
   padding: 0 ;
   transition: color 0.3s ease;
 }
+nav a.disabled {
+  pointer-events: none;
+  color: #aaaaaa; 
+  cursor: not-allowed; 
+}
+
 
 nav a:hover {
   color: #f1c40f;

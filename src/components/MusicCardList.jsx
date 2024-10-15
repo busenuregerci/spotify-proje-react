@@ -11,7 +11,7 @@ const MusicCardList = () => {
 
   return ( 
     <div className="card-list-container">
-      <Link to="add-music" className='add-new-btn'> 
+      <Link to="/add-music" className='add-new-btn'> 
       <PiMusicNotesPlus /> 
   </Link>
     <div className='card-list'>

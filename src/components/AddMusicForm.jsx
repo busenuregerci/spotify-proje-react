@@ -2,16 +2,18 @@ import React, { useContext } from 'react';
 import '../assets/style/addMusicForm.scss';
 import DataContext from '../context/DataContext';
 import { useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2';
 const AddMusicForm = () => {
   const {
     handleSubmit,
     selectedMusic,
+    dispatch,
     musicName,
     musicType,
     musicSinger,
     musicPhoto,
     musicUrl,
-    lyrics,
+    musicLyrics,
     categories
   } = useContext(DataContext);
   const navigate = useNavigate(); 
@@ -20,7 +22,25 @@ const AddMusicForm = () => {
     handleSubmit(e);
     navigate("/home");
     }
+const handleCancel = async() =>{
+  const result = await Swal.fire({
+    title: "Are you sure?",
+    text: "Do you want to cancel without saving the changes",
+    icon: "info",
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'Yes, cancel it!',
+    cancelButtonText: 'No, keep editing'
+
+  });
+  if(result.isConfirmed){
+    dispatch({type:"clearSelectMusic"});
+    navigate("/home");
+  }
+}
   return (
+    <>
     <form onSubmit={handleFormSubmit} className="addMusic">
       <h2>{selectedMusic ? "Edit Music" : "Add Music"}</h2>
       <input
@@ -64,17 +84,25 @@ const AddMusicForm = () => {
         ))}
       </select>
       <textarea
-        value={lyrics}  
+        value={musicLyrics}  
         // case-12
         onChange={(e) =>dispatch({type:"lyrics", payload: e.target.value})}
         placeholder="Enter Lyrics"
         rows="10" cols="50"
       />
-      <input
-        type="submit"
-        value={selectedMusic ? "Edit Music" : "Add Music"}
-      />
+       <div className="button-group">
+    <input type="submit" value={selectedMusic ? "Edit Music" : "Add Music"} />
+    {selectedMusic && (
+      <button className="cancel-button" type="button" onClick={handleCancel}>
+        Cancel
+      </button>
+    )}
+  </div>
+ 
     </form>
+    <div className='margin'></div>
+    </>
+    
   );
 };
 

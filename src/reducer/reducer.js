@@ -9,7 +9,7 @@ export const initialState = {
     musicUrl:"",
     musicPhoto:"",
     musicType:"Select Music Type",
-    lyrics:"",
+    musicLyrics:"",
     musicDetail:""
 
 }
@@ -62,7 +62,7 @@ export const reducer = (state,action) => {
             musicUrl:"",
             musicPhoto:"",
             musicType:"Select Music Type",
-            lyrics:""
+            musicLyrics:""
         }
         // case-7
         case "musicSinger" : return{
@@ -92,7 +92,7 @@ export const reducer = (state,action) => {
         // case-12
         case "lyrics" : return{
             ...state,
-            lyrics: action.payload
+            musicLyrics: action.payload
         }
         // case-13 searchbar'da kontrol et !!!!
         case "initialCategory": return{
@@ -120,11 +120,22 @@ export const reducer = (state,action) => {
             musicUrl:selection.musicUrl,
             musicPhoto:selection.musicPhoto,
             musicType:selection.musicType,
-            lyrics:selection.lyrics
+            musicLyrics:selection.musicLyrics
+
         }
         case "musicDetail" : return{
             ...state,
             musicDetail: action.payload
+        }
+        case "clearSelectMusic" : return{
+            ...state,
+            selectedMusic: "",
+            musicName:"",
+            musicSinger:"",
+            musicUrl:"",
+            musicPhoto:"",
+            musicType:"",
+            musicLyrics:""
         }
     }
 }

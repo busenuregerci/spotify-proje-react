@@ -11,6 +11,7 @@
     "api": "npx json-server --watch ./src/assets/data/dataset.json"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "axios": "^1.7.7",
     "json-server": "^1.0.0-beta.3",
     "react": "^18.3.1",

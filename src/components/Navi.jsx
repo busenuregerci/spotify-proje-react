@@ -3,17 +3,25 @@ import '../assets/style/navi.scss';
 import Brand from '../assets/img/pngwing.com (1).png'; 
 import { NavLink, Outlet, useNavigate } from 'react-router-dom';
 import DataContext from '../context/DataContext';
-import AuthContext from '../context/AuthContext';
+import { useDispatch, useSelector } from 'react-redux';
+import {logout } from "../firebase"
+import {logout as logoutHandle} from "../store/auth"
 
 const Navi = () => {
   const {selectedMusic} = useContext(DataContext);
-  const {logout, isAuthenticated } = useContext(AuthContext); 
+  const {user} = useSelector(state => state.auth)
   const isMusicSelected = selectedMusic ? true : false; 
+  const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  const handleLogout=()=>{
-    logout();
-    navigate("/login")
+
+
+  const handleLogout= async ()=>{
+   await logout();
+   dispatch(logoutHandle())
+    navigate("/login", {
+      replace: true
+    })
   }
 
 
@@ -25,7 +33,7 @@ const Navi = () => {
     </div>
     
     <nav>
-      {isAuthenticated ? ( 
+      {user ? ( 
         <>
           <NavLink to="home" className={isMusicSelected ? 'disabled' : ''} onClick={isMusicSelected ? (e) => e.preventDefault() : null}>
             Home

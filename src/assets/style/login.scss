@@ -28,7 +28,18 @@
             outline: 2px solid #D2FF72;
         }
     }
-
+    a {
+        color: #EEEEEE;
+        text-decoration: none;
+        margin-top: 15px;
+        display: block;
+        font-family: "Silkscreen", sans-serif;
+        font-size: 1.2rem;
+        &:hover {
+            color: #D2FF72;
+            text-decoration: underline;
+        }
+    }
 
     input[type="submit"] {
         width: 120px;

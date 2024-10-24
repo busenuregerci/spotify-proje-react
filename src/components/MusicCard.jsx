@@ -4,17 +4,20 @@ import { VscEdit, VscTrash } from 'react-icons/vsc';
 import DefaultPhoto from '../assets/img/TUNE IN.png';
 import DataContext from '../context/DataContext';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 const MusicCard = ({ music }) => {
   const { swallDelete, search, dispatch } = useContext(DataContext);
 
   const musicNameMatches = music.musicName?.toLowerCase().includes(search.toLowerCase());
   const musicSingerMatches = music.musicSinger?.toLowerCase().includes(search.toLowerCase());
+  const {user} = useSelector(state => state.auth)
 
   return (
     (musicNameMatches || musicSingerMatches) && (
       <div className='card'>
-        <button className='delete' onClick={() => swallDelete(music.id)}>
+        {user && <>
+          <button className='delete' onClick={() => swallDelete(music.id)}>
           <VscTrash size={30} />
         </button>
         <Link to="/add-music">
@@ -22,6 +25,8 @@ const MusicCard = ({ music }) => {
           <VscEdit size={30} />
         </button>
         </Link>
+        </>}
+        
         
         <img src={music.musicPhoto ? music.musicPhoto : DefaultPhoto} alt="music" />
         <div className="text">

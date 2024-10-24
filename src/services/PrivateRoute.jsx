@@ -1,16 +1,17 @@
 import React, { useContext } from 'react';
-import AuthContext from '../context/AuthContext';
 import { Navigate } from 'react-router-dom';
 import Swal from 'sweetalert2'; 
+import { useSelector } from 'react-redux';
 
 const PrivateRoute = ({ element }) => {
-  const { isAuthenticated } = useContext(AuthContext);
+  
+  const {user} = useSelector(state => state.auth)
 
-  if (!isAuthenticated) {
+  if (!user) {
     Swal.fire({
       icon: 'warning',
-      title: 'Login Olmalısınız!',
-      text: 'Login olmadan müzik ekleyemezsiniz.',
+      title: 'You must log in!',
+      text: 'You cannot add music without logging in.',
       showConfirmButton: true,
     });
 

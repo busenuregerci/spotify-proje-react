@@ -23,19 +23,13 @@
         margin-bottom: 15px;
         padding: 10px;
         border: 1px solid #EEEEEE;
-        font-family: "Silkscreen", sans-serif;
+        font-family: monospace;
         &:focus {
             outline: 2px solid #D2FF72;
         }
     }
     
-    input[type="file"] {
-        border: none;
-        background-color: transparent;
-        color: #EEEEEE;
-        cursor: pointer;
-    }
-
+  
     input[type="submit"] {
         width: 120px;
         padding: 10px;
@@ -43,6 +37,7 @@
         border: none;
         color: #FFFFFF;
         font-weight: 700;
+        font-family: "Silkscreen", sans-serif;
         cursor: pointer;
         transition: 0.3s ease;
         &:hover {

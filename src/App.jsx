@@ -10,14 +10,14 @@ import LoginPage from "./pages/LoginPage"
 import AddMusicForm from "./components/AddMusicForm";
 import DetailMusic from "./components/DetailMusic";
 import LoadingPage from "./pages/LoadingPage";
-import { AuthProvider } from "./context/AuthContext";
 import PrivateRoute from "./services/PrivateRoute";
-
+import { Provider } from "react-redux";
+import store from "./store"
 
 function App() {
 
   return (
-    <AuthProvider>
+    <Provider store={store}>
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<LoadingPage />} />
@@ -31,7 +31,7 @@ function App() {
 </Routes>
     </BrowserRouter>
       <ToastContainer/>
-    </AuthProvider>
+    </Provider>
   )
 }
 
